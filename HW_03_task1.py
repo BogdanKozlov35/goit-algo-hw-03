@@ -14,4 +14,4 @@ def get_days_from_today(date):
         print("*** the date isn't correct ***")
         return None
 
-print(get_days_from_today("2021-10-09"))
+print(get_days_from_today("2024-10-03"))
