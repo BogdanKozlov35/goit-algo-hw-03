@@ -9,12 +9,10 @@ def normalize_phone(phone_number):
                 num = "+" + num
             else:
                 num = "+38" + num
-
         sanitized_numbers.append(num)
-
-    print(sanitized_numbers)
     return sanitized_numbers
-normalize_phone(phone_number = [
+
+phone_list = normalize_phone(phone_number = [
         "067\\t123 4567",
         "(095) 234-5678\\n",
         "+380 44 123 4567",
@@ -25,3 +23,4 @@ normalize_phone(phone_number = [
         "38050-111-22-22",
         "38050 111 22 11   "
 ])
+print(phone_list, sep = "\n")
