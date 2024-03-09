@@ -27,11 +27,9 @@ def get_upcoming_birthdays(users):
 
             congratulation_date_str = birthday_this_year.strftime('%Y.%m.%d')
             upcoming_birthdays.append({"name": user["name"], "congratulation_date": congratulation_date_str})
-    print("congratulation list for nearest 7 days:")
-    print(upcoming_birthdays)
-
-
-get_upcoming_birthdays(users = [
+        return upcoming_birthdays
+upcoming_birthdays = get_upcoming_birthdays(users = [
     {"name": "John Doe", "birthday": "1985.03.09"},
     {"name": "Jane Smith", "birthday": "1990.03.10"}
 ])
+print(f"Список привітань на цьому тижні: {upcoming_birthdays}")
