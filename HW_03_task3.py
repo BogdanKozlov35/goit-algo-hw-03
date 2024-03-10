@@ -21,6 +21,7 @@ phone_list = normalize_phone(phone_number = [
         "     0503451234",
         "(050)8889900",
         "38050-111-22-22",
-        "38050 111 22 11   "
+        "38050 111 22 11   ",
+        "+380 44 123 4567"
 ])
-print(phone_list, sep = "\n")
+print(*phone_list, sep="\n")
